@@ -1,0 +1,44 @@
+<meta charset="UTF-8">
+
+<head>
+
+    
+    <title>PROJETO-APIS-2</title>
+
+
+</head>
+
+<body bgcolor="pink">
+
+    <script  type="text/javascript">
+
+        async function getContent() {
+          try {
+            const response = await fetch('http://localhost:3333/')
+        
+            const data = await response.json();
+        
+            show(data);
+          }catch (error){
+              console.log(error)
+          }
+        }
+        
+        getContent()
+        
+        function show(conselho){
+            let output = ""
+        
+            for(let conselho of conselhos)
+            output += '<li>${user.name}</li?'
+        }
+        
+        
+    </script>
+        
+
+
+
+</body>
+
+
